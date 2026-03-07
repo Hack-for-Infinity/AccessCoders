@@ -26,3 +26,12 @@ document.getElementById("dyslexiaMode").onclick = () => {
 document.body.classList.toggle("dyslexia")
 
 }
+/* FONT SIZE SLIDER */
+
+document.getElementById("fontSlider").addEventListener("input", function(){
+
+let size = this.value
+
+document.body.style.fontSize = size + "px"
+
+})
