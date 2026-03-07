@@ -77,3 +77,51 @@ document.body.classList.add("keyboard-navigation")
 }
 
 })
+/* VOICE NAVIGATION */
+
+const voiceBtn = document.getElementById("voiceControl")
+
+voiceBtn.onclick = () => {
+
+const SpeechRecognition =
+window.SpeechRecognition || window.webkitSpeechRecognition
+
+const recognition = new SpeechRecognition()
+
+recognition.start()
+
+recognition.onresult = (event) => {
+
+let command = event.results[0][0].transcript.toLowerCase()
+
+console.log("Voice command:", command)
+
+/* COMMANDS */
+
+if(command.includes("dark mode"))
+document.body.classList.toggle("dark")
+
+if(command.includes("high contrast"))
+document.body.classList.toggle("contrast")
+
+if(command.includes("dyslexia"))
+document.body.classList.toggle("dyslexia")
+
+if(command.includes("read page"))
+speechSynthesis.speak(
+new SpeechSynthesisUtterance(document.body.innerText)
+)
+
+if(command.includes("increase font")){
+let size = parseInt(window.getComputedStyle(document.body).fontSize)
+document.body.style.fontSize = (size + 2) + "px"
+}
+
+if(command.includes("decrease font")){
+let size = parseInt(window.getComputedStyle(document.body).fontSize)
+document.body.style.fontSize = (size - 2) + "px"
+}
+
+}
+
+}
