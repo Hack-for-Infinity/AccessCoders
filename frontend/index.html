@@ -20,10 +20,10 @@
 <input 
 type="text" 
 id="searchInput"
-placeholder="Search scholarships..."
+aria-label="Search scholarships..."
 >
 
-<select id="filter">
+<select id="filter" aria-label="Filter-Scholarships">
 <option value="">All Scholarships</option>
 <option value="disability">Disability Support</option>
 <option value="merit">Merit Based</option>
@@ -39,9 +39,16 @@ placeholder="Search scholarships..."
 
 <script src="search.js"></script>
 
-<div id="accessibility-btn">♿</div>
+<div id="accessibility-btn"
+role="button"
+aria-label="Open accessibility menu"
+tabindex="0">
+♿
+</div>
 
-<div id="accessibility-panel">
+<div id="accessibility-panel"
+role="dialog"
+aria-label="Accessibility Settings">
 
 <h3>Accessibility</h3>
 
