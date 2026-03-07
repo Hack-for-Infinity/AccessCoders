@@ -84,3 +84,16 @@ cursor:pointer;
 background:#121212;
 color:white;
 }
+.contrast{
+background:black;
+color:yellow;
+}
+
+.contrast a{
+color:cyan;
+}
+
+.contrast .card{
+background:black;
+border:2px solid yellow;
+}

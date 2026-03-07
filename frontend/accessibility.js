@@ -14,3 +14,8 @@ document.getElementById("darkMode").onclick = () => {
 document.body.classList.toggle("dark")
 
 }
+/* HIGH CONTRAST MODE */
+
+document.getElementById("contrastMode").onclick = () => {
+document.body.classList.toggle("contrast")
+}
