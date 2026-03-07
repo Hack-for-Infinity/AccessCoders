@@ -9,35 +9,57 @@ app.use(express.json());
 const scholarships = [
 
 {
-name:"Google Disability Scholarship",
+name:"Google Lime Scholarship",
 type:"disability",
+country:"USA",
 amount:"$10000",
-description:"Scholarship for students with disabilities studying technology.",
-link:"https://buildyourfuture.withgoogle.com/scholarships"
+description:"Scholarship for students with disabilities pursuing computer science.",
+link:"https://www.limeconnect.com/programs/page/google-lime-scholarship"
 },
 
 {
-name:"Microsoft Accessibility Grant",
+name:"Microsoft Disability Scholarship",
 type:"disability",
+country:"USA",
 amount:"$5000",
-description:"Financial support for students with accessibility needs.",
-link:"https://www.microsoft.com/en-us/accessibility/scholarships"
+description:"Supports high school seniors with disabilities pursuing technology careers.",
+link:"https://www.microsoft.com/en-us/diversity/programs/microsoftscholarship.aspx"
 },
 
 {
-name:"Apple Scholars Program",
-type:"merit",
-amount:"$8000",
-description:"Merit-based scholarship for outstanding students.",
-link:"https://www.apple.com"
+name:"Snowdon Trust Scholarship",
+type:"disability",
+country:"UK",
+amount:"£3000",
+description:"Scholarship for students with disabilities studying in the UK.",
+link:"https://www.snowdontrust.org"
 },
 
 {
-name:"Future Innovators Scholarship",
-type:"financial",
-amount:"$6000",
-description:"Scholarship for students requiring financial assistance.",
-link:"https://example.com/apply"
+name:"Australian Disability Scholarship",
+type:"disability",
+country:"Australia",
+amount:"$5000",
+description:"Support for Australian students with disabilities entering university.",
+link:"https://www.education.gov.au"
+},
+
+{
+name:"Indira Gandhi Scholarship for Disabled Students",
+type:"disability",
+country:"India",
+amount:"₹2000/month",
+description:"Scholarship for disabled students pursuing higher education in India.",
+link:"https://scholarships.gov.in"
+},
+
+{
+name:"Canada Disability Student Grant",
+type:"disability",
+country:"Canada",
+amount:"$4000",
+description:"Grant for Canadian students with permanent disabilities.",
+link:"https://www.canada.ca"
 }
 
 ]
