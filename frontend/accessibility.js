@@ -67,3 +67,13 @@ document.getElementById("stopReading").onclick = () => {
 speechSynthesis.cancel()
 
 }
+
+/* KEYBOARD NAVIGATION */
+
+document.addEventListener("keydown",(e)=>{
+
+if(e.key === "Tab"){
+document.body.classList.add("keyboard-navigation")
+}
+
+})
