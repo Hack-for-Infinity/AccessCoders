@@ -19,3 +19,10 @@ document.body.classList.toggle("dark")
 document.getElementById("contrastMode").onclick = () => {
 document.body.classList.toggle("contrast")
 }
+/* DYSLEXIA MODE */
+
+document.getElementById("dyslexiaMode").onclick = () => {
+
+document.body.classList.toggle("dyslexia")
+
+}

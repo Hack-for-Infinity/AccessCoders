@@ -97,3 +97,9 @@ color:cyan;
 background:black;
 border:2px solid yellow;
 }
+
+.dyslexia{
+font-family: "OpenDyslexic", Arial, sans-serif;
+letter-spacing: 1px;
+line-height: 1.6;
+}
