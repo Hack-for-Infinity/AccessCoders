@@ -41,19 +41,25 @@ scholarshipList.appendChild(card)
 
 }
 
+const countryFilter = document.getElementById("countryFilter")
+
 searchBtn.addEventListener("click",()=>{
 
 const keyword = searchInput.value.toLowerCase()
 
 const type = filter.value
 
+const country = countryFilter.value
+
 const filtered = scholarships.filter(s=>{
 
 const matchesSearch = s.name.toLowerCase().includes(keyword)
 
-const matchesType = type==="" || s.type===type
+const matchesType = type === "" || s.type === type
 
-return matchesSearch && matchesType
+const matchesCountry = country === "" || s.country === country
+
+return matchesSearch && matchesType && matchesCountry
 
 })
 
