@@ -1,0 +1,25 @@
+{
+  "name": "accesscoders",
+  "version": "1.0.0",
+  "description": "Hey team! 🎉 Welcome to your dedicated repository for the **Infinity 2K26 Hackathon** organized by the **IEEE Computer Society OUCE Student Chapter**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hack-for-Infinity/AccessCoders.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Hack-for-Infinity/AccessCoders/issues"
+  },
+  "homepage": "https://github.com/Hack-for-Infinity/AccessCoders#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
