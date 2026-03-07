@@ -9,3 +9,8 @@ panel.style.display === "block"
 : "block"
 
 }
+document.getElementById("darkMode").onclick = () => {
+
+document.body.classList.toggle("dark")
+
+}
