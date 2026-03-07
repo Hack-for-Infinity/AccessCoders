@@ -49,3 +49,21 @@ link.style.padding = "2px"
 })
 
 }
+/* TEXT TO SPEECH */
+
+let speech
+
+document.getElementById("readPage").onclick = () => {
+
+speech = new SpeechSynthesisUtterance(document.body.innerText)
+
+speechSynthesis.speak(speech)
+
+}
+/* STOP SPEECH */
+
+document.getElementById("stopReading").onclick = () => {
+
+speechSynthesis.cancel()
+
+}
