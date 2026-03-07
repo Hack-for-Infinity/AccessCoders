@@ -111,3 +111,22 @@ margin:10px 0;
 outline:3px solid #ff9800;
 outline-offset:2px;
 }
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+background:#f4f4f4;
+padding:40px;
+}
+
+.hero-image{
+max-width:600px;
+width:80%;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.2);
+transition:transform 0.3s ease;
+}
+
+.hero-image:hover{
+transform:scale(1.03);
+}

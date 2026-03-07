@@ -125,3 +125,34 @@ document.body.style.fontSize = (size - 2) + "px"
 }
 
 }
+document.getElementById("toggleImages").onclick = () => {
+
+document.querySelectorAll("img").forEach(img => {
+
+if(img.style.display === "none"){
+img.style.display = "block"
+}
+else{
+img.style.display = "none"
+}
+
+})
+
+}
+document.getElementById("describeImages").onclick = () => {
+
+document.querySelectorAll("img").forEach(img => {
+
+let description = img.alt
+
+if(description){
+
+let speech = new SpeechSynthesisUtterance(description)
+
+speechSynthesis.speak(speech)
+
+}
+
+})
+
+}
