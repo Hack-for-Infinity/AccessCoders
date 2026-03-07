@@ -12,28 +12,32 @@ const scholarships = [
 name:"Google Disability Scholarship",
 type:"disability",
 amount:"$10000",
-description:"Scholarship for students with disabilities studying technology."
+description:"Scholarship for students with disabilities studying technology.",
+link:"https://buildyourfuture.withgoogle.com/scholarships"
 },
 
 {
 name:"Microsoft Accessibility Grant",
 type:"disability",
 amount:"$5000",
-description:"Financial support for students with accessibility needs."
+description:"Financial support for students with accessibility needs.",
+link:"https://www.microsoft.com/en-us/accessibility/scholarships"
 },
 
 {
 name:"Apple Scholars Program",
 type:"merit",
 amount:"$8000",
-description:"Merit-based scholarship for outstanding students."
+description:"Merit-based scholarship for outstanding students.",
+link:"https://www.apple.com"
 },
 
 {
 name:"Future Innovators Scholarship",
 type:"financial",
 amount:"$6000",
-description:"Scholarship for students requiring financial assistance."
+description:"Scholarship for students requiring financial assistance.",
+link:"https://example.com/apply"
 }
 
 ]

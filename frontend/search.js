@@ -29,6 +29,10 @@ card.innerHTML = `
 <h3>${item.name}</h3>
 <p>${item.description}</p>
 <strong>${item.amount}</strong>
+<br><br>
+<a href="${item.link}" target="_blank">
+<button class="apply-btn">Apply Now</button>
+</a>
 `
 
 scholarshipList.appendChild(card)
