@@ -35,3 +35,17 @@ let size = this.value
 document.body.style.fontSize = size + "px"
 
 })
+
+/* HIGHLIGHT LINKS */
+
+document.getElementById("highlightLinks").onclick = () => {
+
+document.querySelectorAll("a").forEach(link => {
+
+link.style.background = "yellow"
+link.style.color = "black"
+link.style.padding = "2px"
+
+})
+
+}
